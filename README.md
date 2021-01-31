@@ -1,7 +1,7 @@
 # SLAM-Analysis-Tools
 The repository contains instructions for Localization and Map Analysis.
 
-Download & Install [EVO](https://github.com/MichaelGrupp/evo):
+## [EVO](https://github.com/MichaelGrupp/evo) Download and Install:
 ```
 git clone https://github.com/MichaelGrupp/evo.git
 cd ~/evo
