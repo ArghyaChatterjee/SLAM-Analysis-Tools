@@ -35,3 +35,7 @@ cd ~/evo/test/data
 mkdir results
 evo_res results/odometry_analysis.zip -p --save_table results/table.csv
 ```
+## Rosbag to Text File Conversion (Optional):
+```
+rostopic echo -b odometry_analysis.bag -p /odom > odom.txt
+```
