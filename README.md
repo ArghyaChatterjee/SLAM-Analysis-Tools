@@ -21,13 +21,13 @@ evo_traj bag odometry_analysis.bag /odom --ref /gt_odom -va --plot --plot_mode=x
 ```
 cd ~/evo/test/data
 mkdir results
-evo_ape bag odometry_analysis.bag /odom /gt_odom -va --plot --plot_mode=xyz --save_results results/odometry_analysis.zip
+evo_ape bag odometry_analysis.bag /gt_odom /odom -va --plot --plot_mode=xyz --save_results results/odometry_analysis.zip
 ```
 ## Relative Position Error (RPE) Analysis, Plot and Save:
 ```
 cd ~/evo/test/data
 mkdir results
-evo_rpe bag odometry_analysis.bag /odom /gt_odom -va --plot --plot_mode=xyz --save_results results/odometry_analysis.zip
+evo_rpe bag odometry_analysis.bag /gt_odom /odom -va --plot --plot_mode=xyz --save_results results/odometry_analysis.zip
 ```
 ## Post Result Analysis and Plot:
 ```
