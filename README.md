@@ -37,7 +37,7 @@ cd ~/evo/test/data
 mkdir results
 evo_rpe bag odometry_analysis.bag /gt_odom /odom -va --plot --plot_mode=xyz --save_results results/odometry_analysis.zip
 ```
-If you want to align origin during RPE calculation, add --align_origin flag in the command line.
+If you want to align origin during RPE calculation, add `--align_origin` flag in the command line.
 ## Post Result Analysis and Plot:
 ```
 cd ~/evo/test/data
