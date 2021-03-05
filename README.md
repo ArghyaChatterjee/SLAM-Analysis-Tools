@@ -24,6 +24,13 @@ cd ~/evo/test/data
 mkdir results
 evo_ape bag odometry_analysis.bag /gt_odom /odom -va --plot --plot_mode=xyz --save_results results/odometry_analysis.zip
 ```
+Timestamps are used to establish point correspondence (registration) for the alignment. They don't need to be the same but in the same interval and ideally synchronized. You can play around with the --t_offset and --t_max_diff parameters if you know your timesync, see evo_ape tum --help:
+```
+  --t_max_diff T_MAX_DIFF   maximum timestamp difference for data association
+                        
+  --t_offset T_OFFSET   constant timestamp offset for data association
+```
+If you want to align the trajectory just based on the geography shape, you have to use a format without timestamps (e.g. the kitti format) and both files have to have exactly the same number of corresponding poses.
 ## Relative Position Error (RPE) Analysis, Plot and Save:
 ```
 cd ~/evo/test/data
